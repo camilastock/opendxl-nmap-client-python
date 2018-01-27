@@ -27,7 +27,7 @@ installation instructions, API documentation, and examples.
 
 To start using the DXL Nmap Python Client:
 
-* Download the [Latest Release](https://github.com/camilastock/opendxl-nmap-client-python/tree/0.0.1)
+* Download the [Latest Release](https://github.com/camilastock/opendxl-nmap-client-python/releases)
 * Extract the release .zip file
 * View the `README.html` file located at the root of the extracted files.
   * The `README` links to the documentation which includes installation instructions, tool details, and samples.
