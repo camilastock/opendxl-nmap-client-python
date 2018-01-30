@@ -1,4 +1,4 @@
-DXL Nmap Client
+OpenDXL Nmap Client
 ===============
 
 Introduction

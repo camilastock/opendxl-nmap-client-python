@@ -10,7 +10,7 @@ For more information see:
 Prerequisites
 *************
 * The samples configuration step has been completed (see :doc:`sampleconfig`)
-* The DXL Nmap service is running and available on the DXL fabric (see `DXL Nmap Service Python <https://github-lvs.corpzone.internalzone.com/detect/opendxl-nmap-service-python>`_)
+* The OpenDXL Nmap service is running and available on the DXL fabric (see `OpenDXL Nmap Service Python <https://github-lvs.corpzone.internalzone.com/detect/opendxl-nmap-service-python>`_)
 
 Setup
 *****
@@ -100,7 +100,7 @@ The majority of the sample code is shown below:
                 MessageUtils.dict_to_json(resp_dict, pretty_print=True))
 
 Once a connection is established to the DXL fabric, a :class:`dxlnmapclient.client.DXLNmapClient` instance is
-created which will be used to invoke remote commands on the DXL Nmap Service.
+created which will be used to invoke remote commands on the OpenDXL Nmap Service.
 
 Next, the :func:`dxlnmapclient.client.DXLNmapClient.scan_report` method is invoked with the target to
 be scanned and report it.

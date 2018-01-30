@@ -1,27 +1,27 @@
-McAfee DXL Python Nmap Client Library
+OpenDXL Python Nmap Client Library
 =====================================
 
 Overview
 --------
 
-The McAfee Nmap DXL Client provides a high level wrapper for invoking the [Nmap tool](https://nmap.org)
+The OpenDXL Nmap Client provides a high level wrapper for invoking the [Nmap tool](https://nmap.org)
 via [Data Exchange Layer](http://www.mcafee.com/us/solutions/data-exchange-layer.aspx) (DXL) fabric.
 
 The purpose of this library is to allow users to invoke Nmap commands (choosing the corresponding nmap's arguments) without having to focus
 on lower-level details such as Nmap-specific DXL topics and message formats.
 
-This client requires the Nmap DXL Service to be running and available on the DXL fabric.
+This client requires the OpenDXL Nmap Service to be running and available on the DXL fabric.
 
 A Python-based implementation of an Nmap DXL service is available here:
 
-* `McAfee Nmap DXL Python Service <https://github.com/camilastock/opendxl-nmap-service-python>`_
+* `OpenDXL Nmap Python Service <https://github.com/camilastock/opendxl-nmap-service-python>`_
 
 Documentation
 -------------
 
-See the `GitHub Wiki <https://github.com/camilastock/opendxl-nmap-client-python/wiki>`_ for an overview of the DXL Nmap Client Library and examples.
+See the `GitHub Wiki <https://github.com/camilastock/opendxl-nmap-client-python/wiki>`_ for an overview of the OpenDXL Nmap Client Library and examples.
 
-See the `McAfee Nmap DXL Python Client Library Documentation <https://github.com/camilastock/opendxl-nmap-client-python/pydoc>`_ for
+See the `OpenDXL Nmap Python Client Library Documentation <https://github.com/camilastock/opendxl-nmap-client-python/pydoc>`_ for
 installation instructions, API documentation, and examples.
 
 Bugs and Feedback

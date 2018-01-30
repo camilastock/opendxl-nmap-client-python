@@ -1,31 +1,31 @@
-# McAfee Nmap DXL Python Client Library
+# OpenDXL Nmap Python Client Library
 [![OpenDXL Bootstrap](https://img.shields.io/badge/Built%20With-OpenDXL%20Bootstrap-blue.svg)](https://github.com/opendxl/opendxl-bootstrap-python)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Overview
 
-The McAfee Nmap DXL Client provides a high level wrapper for invoking the [Nmap tool](https://nmap.org)
+The OpenDXL Nmap Client provides a high level wrapper for invoking the [Nmap tool](https://nmap.org)
 via [Data Exchange Layer](http://www.mcafee.com/us/solutions/data-exchange-layer.aspx) (DXL) fabric.
 
 The purpose of this library is to allow users to invoke Nmap commands (choosing the corresponding nmap's arguments) without having to focus
 on lower-level details such as Nmap-specific DXL topics and message formats.
 
-This client requires the Nmap DXL Service to be running and available on the DXL fabric.
+This client requires the OpenDXL Nmap DXL to be running and available on the DXL fabric.
 
 A Python-based implementation of an Nmap DXL service is available here:
 
-* [McAfee Nmap DXL Python Service](https://github.com/camilastock/opendxl-nmap-service-python)
+* [OpenDXL Nmap Python Service](https://github.com/camilastock/opendxl-nmap-service-python)
 
 ## Documentation
 
-See the [Wiki](https://github.com/camilastock/opendxl-nmap-client-python/wiki) for an overview of the DXL Nmap Client Library and examples.
+See the [Wiki](https://github.com/camilastock/opendxl-nmap-client-python/wiki) for an overview of the OpenDXL Nmap Client Library and examples.
 
-See the [McAfee Nmap DXL Python Client Library Documentation](https://github.com/camilastock/opendxl-nmap-client-python/pydoc) for
+See the [OpenDXL Nmap Python Client Library Documentation](https://github.com/camilastock/opendxl-nmap-client-python/pydoc) for
 installation instructions, API documentation, and examples.
 
 ## Installation
 
-To start using the DXL Nmap Python Client:
+To start using the OpenDXL Nmap Python Client:
 
 * Download the [Latest Release](https://github.com/camilastock/opendxl-nmap-client-python/releases)
 * Extract the release .zip file

@@ -34,7 +34,7 @@ dist = setup(
     license="Apache License 2.0",
 
     # Keywords
-    keywords=['opendxl', 'dxl', 'mcafee', 'client', 'nmap'],
+    keywords=['opendxl', 'dxl', 'client', 'nmap'],
 
     # Packages
     packages=[
@@ -48,7 +48,7 @@ dist = setup(
     # Details
     url="http://www.mcafee.com",
 
-    description="Nmap DXL service",
+    description="OpenDXL Nmap service",
 
     long_description=open('README').read(),
 
