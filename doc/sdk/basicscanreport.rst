@@ -10,7 +10,7 @@ For more information see:
 Prerequisites
 *************
 * The samples configuration step has been completed (see :doc:`sampleconfig`)
-* The OpenDXL Nmap service is running and available on the DXL fabric (see `OpenDXL Nmap Service Python <https://github-lvs.corpzone.internalzone.com/detect/opendxl-nmap-service-python>`_)
+* The OpenDXL Nmap service is running and available on the DXL fabric (see `OpenDXL Nmap Service Python <https://github.com/camilastock/opendxl-nmap-service-python>`_)
 
 Setup
 *****
