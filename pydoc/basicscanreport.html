@@ -1,0 +1,245 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Basic Scan Host Report Example &#8212; OpenDXL Nmap Client 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="dxlnmapclient package" href="dxlnmapclient.html" />
+    <link rel="prev" title="Samples Configuration" href="sampleconfig.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dxlnmapclient.html" title="dxlnmapclient package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sampleconfig.html" title="Samples Configuration"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OpenDXL Nmap Client 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="basic-scan-host-report-example">
+<h1>Basic Scan Host Report Example<a class="headerlink" href="#basic-scan-host-report-example" title="Permalink to this headline">¶</a></h1>
+<p>This sample invokes and displays the results of an aggressive Nmap scan with the corresponding operating system where this execution is being performed
+by invoking the Nmap service via DXL</p>
+<dl class="docutils">
+<dt>For more information see:</dt>
+<dd><a class="reference external" href="https://nmap.org">https://nmap.org</a></dd>
+</dl>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The samples configuration step has been completed (see <a class="reference internal" href="sampleconfig.html"><span class="doc">Samples Configuration</span></a>)</li>
+<li>The OpenDXL Nmap service is running and available on the DXL fabric (see <a class="reference external" href="https://github.com/camilastock/opendxl-nmap-service-python">OpenDXL Nmap Service Python</a>)</li>
+</ul>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Modify the example to include the targets and options in the file you want to scan.</p>
+<p>For example:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Define elements to be analysed</span>
+<span class="n">target_1</span> <span class="o">=</span> <span class="s1">&#39;200.17.2.2&#39;</span>
+<span class="n">target_2</span> <span class="o">=</span> <span class="s1">&#39;200.17.2.3&#39;</span>
+<span class="n">target_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">target_1</span><span class="p">,</span> <span class="n">target_2</span><span class="p">]</span>
+
+<span class="c1"># Define options to execute the tool</span>
+<span class="n">option</span> <span class="o">=</span> <span class="n">NmapOptions</span><span class="o">.</span><span class="n">AGGRESSIVE_SCAN_OP_SYSTEM</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Where <cite>“target_#”</cite> parameter represent the element to be analysed and <a href="#id1"><span class="problematic" id="id2">`</span></a>”option”<a href="#id3"><span class="problematic" id="id4">`</span></a>is the parameter to
+execute Nmap tool
+There are different options:</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="11%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Option</th>
+<th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Aggressive
+scan</td>
+<td>-A</td>
+<td>Aggressive Scan</td>
+</tr>
+<tr class="row-odd"><td>Operating
+system</td>
+<td>-O</td>
+<td>Operating system in the current host</td>
+</tr>
+<tr class="row-even"><td>Agress Scan
+Operat sys</td>
+<td>-O - A</td>
+<td>Both options</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>You can look for more information about Nmap tool in <a class="reference external" href="https://nmap.org/book/man-briefoptions.html">Nmap page</a></p>
+</div>
+<div class="section" id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
+<p>To run this sample execute the <code class="docutils literal"><span class="pre">sample/basic/basic_scan_report.py</span></code> script as follows:</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">sample</span><span class="o">/</span><span class="n">basic</span><span class="o">/</span><span class="n">basic_scan_report</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The output should be similar to the following:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Response</span> <span class="k">for</span> <span class="n">nmapservice_requesthandler</span><span class="p">:</span>
+
+<span class="n">Response</span><span class="p">:</span>
+<span class="p">{</span>
+    <span class="s2">&quot;100&quot;</span><span class="p">:</span> <span class="s2">&quot;------------------------------------------&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;101&quot;</span><span class="p">:</span> <span class="s2">&quot;Nmap scan report for 10.87.242.195. Host is up&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;102&quot;</span><span class="p">:</span> <span class="s2">&quot;Operative System: Linux&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;103&quot;</span><span class="p">:</span> <span class="s2">&quot;PORT:    22/tcp STATE: open SERVICE: ssh&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;104&quot;</span><span class="p">:</span> <span class="s2">&quot;------------------------------------------&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<p>The majority of the sample code is shown below:</p>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Create the client</span>
+<span class="k">with</span> <span class="n">DxlClient</span><span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="k">as</span> <span class="n">dxl_client</span><span class="p">:</span>
+
+<span class="c1"># Connect to the fabric</span>
+<span class="n">dxl_client</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Connected to DXL fabric.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create client wrapper</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">DXLNmapClient</span><span class="p">(</span><span class="n">dxl_client</span><span class="p">)</span>
+
+<span class="c1"># Invoke the aggressive scan method</span>
+<span class="n">resp_dict</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">scan_report</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+
+<span class="c1"># Print out the response (convert dictionary to JSON for pretty</span>
+<span class="c1"># printing)</span>
+<span class="k">print</span> <span class="s2">&quot;Response:</span><span class="se">\n</span><span class="s2">{0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="n">MessageUtils</span><span class="o">.</span><span class="n">dict_to_json</span><span class="p">(</span><span class="n">resp_dict</span><span class="p">,</span> <span class="n">pretty_print</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Once a connection is established to the DXL fabric, a <code class="xref py py-class docutils literal"><span class="pre">dxlnmapclient.client.DXLNmapClient</span></code> instance is
+created which will be used to invoke remote commands on the OpenDXL Nmap Service.</p>
+<p>Next, the <code class="xref py py-func docutils literal"><span class="pre">dxlnmapclient.client.DXLNmapClient.scan_report()</span></code> method is invoked with the target to
+be scanned and report it.</p>
+<p>The final step is to display the contents of the returned dictionary (<code class="docutils literal"><span class="pre">dict</span></code>) which contains the results of the scan report.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Basic Scan Host Report Example</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#running">Running</a></li>
+<li><a class="reference internal" href="#details">Details</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sampleconfig.html"
+                        title="previous chapter">Samples Configuration</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dxlnmapclient.html"
+                        title="next chapter">dxlnmapclient package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/basicscanreport.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dxlnmapclient.html" title="dxlnmapclient package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sampleconfig.html" title="Samples Configuration"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OpenDXL Nmap Client 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Copyright 2017.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>
