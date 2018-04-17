@@ -31,7 +31,7 @@ To start using the OpenDXL Nmap Python Client:
 * Extract the release .zip file
 * View the `README.html` file located at the root of the extracted files.
   * The `README` links to the documentation which includes installation instructions, tool details, and samples.
-  * The SDK documentation is also available on-line [here](https://opendxl.github.io/opendxl-client-python/pydoc/).
+  * The SDK documentation is also available on-line [here](https://camilastock.github.io/opendxl-nmap-client-python/).
 
 ## Bugs and Feedback
 
