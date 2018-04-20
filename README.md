@@ -20,7 +20,7 @@ A Python-based implementation of an Nmap DXL service is available here:
 
 See the [Wiki](https://github.com/camilastock/opendxl-nmap-client-python/wiki) for an overview of the OpenDXL Nmap Client Library and examples.
 
-See the [OpenDXL Nmap Python Client Library Documentation](https://github.com/camilastock/opendxl-nmap-client-python/pydoc) for
+See the [OpenDXL Nmap Python Client Library Documentation](https://camilastock.github.io/opendxl-nmap-client-python/) for
 installation instructions, API documentation, and examples.
 
 ## Installation
