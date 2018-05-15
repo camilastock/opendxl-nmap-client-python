@@ -28,7 +28,7 @@ dist = setup(
     ],
 
     # Package author details:
-    author="McAfee LLC",
+    author="Camila Stock",
 
     # License
     license="Apache License 2.0",
@@ -46,7 +46,7 @@ dist = setup(
         "dxlnmapclient._config.sample" : ['*']},
 
     # Details
-    url="http://www.mcafee.com",
+    url="https://www.opendxl.com/",
 
     description="OpenDXL Nmap service",
 
