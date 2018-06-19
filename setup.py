@@ -23,8 +23,7 @@ dist = setup(
     # Requirements
     install_requires=[
         "dxlclient",
-        "dxlbootstrap>=0.1.3",
-        "dxlclient"
+        "dxlbootstrap>=0.1.3"
     ],
 
     # Package author details:
