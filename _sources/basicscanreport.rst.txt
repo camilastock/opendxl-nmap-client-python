@@ -33,18 +33,21 @@ Where `"target_#"` parameter represent the element to be analysed and `"option"`
 execute Nmap tool
 There are different options:
 
-    +------------+---------+----------------------------------------------------------+
-    | Option     | Command | Description                                              |
-    +============+=========+==========================================================+
-    | Aggressive |  -A     | Aggressive Scan                                          |
-    | scan       |         |                                                          |
-    +------------+---------+----------------------------------------------------------+
-    | Operating  |  -O     | Operating system in the current host                     |
-    | system     |         |                                                          |
-    +------------+---------+----------------------------------------------------------+
-    |Agress Scan | -O - A  | Both options                                             |
-    |Operat sys  |         |                                                          |
-    +------------+---------+----------------------------------------------------------+
+    +-------------+---------+----------------------------------------------------------+
+    | Option      | Command | Description                                              |
+    +=============+=========+==========================================================+
+    | Aggressive  | -A      | Aggressive Scan                                          |
+    | Scan        |         |                                                          |
+    +-------------+---------+----------------------------------------------------------+
+    | Operating   | -O      | Operating system in the current host                     |
+    | System      |         |                                                          |
+    +-------------+---------+----------------------------------------------------------+
+    | Aggressive  | -O - A  | Both options                                             |
+    | Scan        |         |                                                          |
+    | +           |         |                                                          |
+    | Operating   |         |                                                          |
+    | System      |         |                                                          |
+    +-------------+---------+----------------------------------------------------------+
 
 You can look for more information about Nmap tool in `Nmap page <https://nmap.org/book/man-briefoptions.html>`_
 
