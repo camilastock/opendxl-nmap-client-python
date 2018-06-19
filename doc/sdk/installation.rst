@@ -13,12 +13,6 @@ Prerequisites
 * Python 2.7.9 or higher installed within a Windows or Linux environment
     (Python 3 is not supported at this time)
 
-* Python-libnmap installed within a Windows or Linux environment
-    .. parsed-literal::
-
-        pip install python-libnmap
-
-   You can look for more information in `<https://pypi.python.org/pypi/python-libnmap>_`
 
 Installation
 ************
