@@ -86,21 +86,21 @@ The majority of the sample code is shown below:
             # Create the client
             with DxlClient(config) as dxl_client:
 
-            # Connect to the fabric
-            dxl_client.connect()
+                # Connect to the fabric
+                dxl_client.connect()
 
-            logger.info("Connected to DXL fabric.")
+                logger.info("Connected to DXL fabric.")
 
-            # Create client wrapper
-            client = DXLNmapClient(dxl_client)
+                # Create client wrapper
+                client = DXLNmapClient(dxl_client)
 
-            # Invoke the aggressive scan method
-            resp_dict = client.scan_report(option)
+                # Invoke the aggressive scan method
+                resp_dict = client.scan_report(option)
 
-            # Print out the response (convert dictionary to JSON for pretty
-            # printing)
-            print "Response:\n{0}".format(
-                MessageUtils.dict_to_json(resp_dict, pretty_print=True))
+                # Print out the response (convert dictionary to JSON for pretty
+                # printing)
+                print "Response:\n{0}".format(
+                    MessageUtils.dict_to_json(resp_dict, pretty_print=True))
 
 Once a connection is established to the DXL fabric, a :class:`dxlnmapclient.client.DXLNmapClient` instance is
 created which will be used to invoke remote commands on the OpenDXL Nmap Service.
